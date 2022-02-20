@@ -1,0 +1,39 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Montserrat', sans-serif;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.skill-icon {
+    text-align: center;
+}
+
+.interest-item {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.interest-box {
+    display: flex;
+    justify-content: center;
+}
