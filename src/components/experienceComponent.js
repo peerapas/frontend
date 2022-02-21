@@ -1,20 +1,29 @@
 import '../styles/styles.css';
+import ExperienceElement from './experienceElementComponent';
+
 const Experience =() => {
+    const data = [
+        {
+            start:"2021",
+            end:"Present",
+            topic: "Banana Software",
+            location: "Chiang Mai"
+        },
+        {
+            start:"2018",
+            end:"2021",
+            topic: "Computer Engineering",
+            location: "Chiang Mai University"
+        }
+    ]
     return(
         <div className="exprience">
             <h3>My Experience</h3>
             <table  className="experience-table">
                 <tbody>
-                    <tr>
-                        <td>2021-Present</td>
-                        <td>Banana Software, Chiang mai</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td>2018 - 2021</td>
-                        <td>Computer Engineering, Chiang Mai University</td>
-                    </tr>
+                    {data.map((element) => {
+                        return <ExperienceElement start={element.start} end={element.end} topic={element.topic} location={element.location} />
+                    })}
                 </tbody>
             </table>
         </div>
